@@ -410,3 +410,657 @@ MONGODB admin['$cmd'].find({:ismaster=>1})
 MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
 MONGODB admin['$cmd'].find({:ismaster=>1})
 MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:39 -0400
+
+NoMethodError (undefined method `process_view_paths' for ActionView::Base:Class):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.4ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:39 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (56.2ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2bc5f64>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:42 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2bca12c>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:43 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (42.2ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x26e7ed4>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:43 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b7b0e0>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:44 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2c7c908>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:44 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b4a364>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:44 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2bf9904>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:44 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (40.9ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x26fdc0c>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:44 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b853ec>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:45 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2bd0ef0>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:45 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b58568>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:45 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2c0c888>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:45 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b0cde8>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:46 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b88f4c>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:46 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (42.8ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x26af868>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:46 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2b6f2cc>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:14:46 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x2bc7f6c>:0x2c37a74>):
+    1: <h3>Home</h3>
+    2: <% @users.each do |user| %>
+    3:   <p>User: <%=link_to user.name, user %></p>
+    4: <% end %>
+  app/views/home/index.html.erb:3:in `block in _app_views_home_index_html_erb___784635554_22947970'
+  app/views/home/index.html.erb:2:in `_app_views_home_index_html_erb___784635554_22947970'
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Rendered shared/_navigation.html.erb (0.9ms)
+Completed 200 OK in 141ms (Views: 140.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:16:25 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 17:16:30 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 17:16:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 8.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 17:18:01 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 17:18:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 17:18:03 -0400
+
+
+Started GET "/auth/facebook/callback?code=AQBoU18YMrWP7U3T_ULevIg3jUg_TWQPmGRcwTbZNml7GexVIVmJurFrRNAO0FWPTL-d3geiHvqi5U6mh1a9-R4_jlVXYvi6R7cBMWqMgZ-xs9Tco2vduxgS5lGkpwLX58H3_bFt87XE8kc73GNXBO4Yvy3QrWrv6aTxG6phemHqX2TRdT5w-fJr-vygurYBevw" for 127.0.0.1 at 2011-10-01 17:18:10 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBoU18YMrWP7U3T_ULevIg3jUg_TWQPmGRcwTbZNml7GexVIVmJurFrRNAO0FWPTL-d3geiHvqi5U6mh1a9-R4_jlVXYvi6R7cBMWqMgZ-xs9Tco2vduxgS5lGkpwLX58H3_bFt87XE8kc73GNXBO4Yvy3QrWrv6aTxG6phemHqX2TRdT5w-fJr-vygurYBevw", "provider"=>"facebook"}
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({:provider=>"facebook", :uid=>"568675458"})
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.5ms)
+MONGODB testapp_development['users'].find({:_id=>BSON::ObjectId('4e8780d05097d50eb5000001')})
+Rendered shared/_navigation.html.erb (0.7ms)
+Completed 200 OK in 25ms (Views: 9.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2011-10-01 17:18:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:18:24 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.5ms)
+MONGODB testapp_development['users'].find({:_id=>BSON::ObjectId('4e8780d05097d50eb5000001')})
+Rendered shared/_navigation.html.erb (0.7ms)
+Completed 200 OK in 25ms (Views: 9.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:18:25 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 17:19:05 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 17:19:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 8.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:19:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 17:19:10 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 17:19:10 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)

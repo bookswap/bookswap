@@ -1,4 +1,6 @@
 Rails3MongoidOmniauth::Application.routes.draw do
+  devise_for :users
+
   #get \"users\/show\"
 
   root :to => "home#index"
