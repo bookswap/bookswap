@@ -16,3 +16,4 @@ gem "launchy", ">= 2.0.5", :group => :test
 gem "bson_ext", ">= 1.3.1"
 gem "mongoid", ">= 2.2.0"
 gem "omniauth", ">= 0.2.6", :git => "git://github.com/intridea/omniauth.git"
+gem "devise"

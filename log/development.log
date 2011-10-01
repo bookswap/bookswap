@@ -1,0 +1,412 @@
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 16:54:34 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (171.4ms)
+Compiled application.css  (1ms)  (pid 68911)
+Compiled home.css  (12ms)  (pid 68911)
+Compiled users.css  (1ms)  (pid 68911)
+Compiled application.js  (3ms)  (pid 68911)
+Compiled jquery.js  (4ms)  (pid 68911)
+Compiled jquery_ujs.js  (1ms)  (pid 68911)
+Compiled home.js  (253ms)  (pid 68911)
+Compiled users.js  (202ms)  (pid 68911)
+Rendered shared/_navigation.html.erb (1.3ms)
+Completed 200 OK in 872ms (Views: 829.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /users.css - 200 OK (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /home.css - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /home.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /jquery_ujs.js - 200 OK (12ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /users.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:35 -0400
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/users/4e587a4906e596b90f000002" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4e587a4906e596b90f000002"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 16:54:41 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 16:54:41 -0400
+
+OAuth::Unauthorized (401 Unauthorized):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/users/4e587a4906e596b90f000002" for 127.0.0.1 at 2011-10-01 16:54:47 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4e587a4906e596b90f000002"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 16:54:47 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 9.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:54:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 16:54:52 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 16:54:52 -0400
+
+OAuth::Unauthorized (401 Unauthorized):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 16:59:07 -0400
+
+
+Started GET "/auth/facebook/callback?code=AQByBfDnatfQDSEET2l-7jJOp1eypuiZtImUowhgRjFL218AH-Tt9zSn_22ZntMA3Er4B2wBMjtR1g5BY7R41RfjjlqQ5dFOn5pDeXoWiVvJULQsAKVRiVBZePD0TIJvxu5Y3vGzFsLExRrrNaNeU1UC-NLtVihonbRucI8Ss0-kJfm-Z6p3uyfUqISOJbxoom4" for 127.0.0.1 at 2011-10-01 16:59:18 -0400
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.4ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/auth/facebook/callback?code=AQByBfDnatfQDSEET2l-7jJOp1eypuiZtImUowhgRjFL218AH-Tt9zSn_22ZntMA3Er4B2wBMjtR1g5BY7R41RfjjlqQ5dFOn5pDeXoWiVvJULQsAKVRiVBZePD0TIJvxu5Y3vGzFsLExRrrNaNeU1UC-NLtVihonbRucI8Ss0-kJfm-Z6p3uyfUqISOJbxoom4" for 127.0.0.1 at 2011-10-01 17:06:21 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQByBfDnatfQDSEET2l-7jJOp1eypuiZtImUowhgRjFL218AH-Tt9zSn_22ZntMA3Er4B2wBMjtR1g5BY7R41RfjjlqQ5dFOn5pDeXoWiVvJULQsAKVRiVBZePD0TIJvxu5Y3vGzFsLExRrrNaNeU1UC-NLtVihonbRucI8Ss0-kJfm-Z6p3uyfUqISOJbxoom4", "provider"=>"facebook"}
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({:provider=>"facebook", :uid=>"568675458"})
+MONGODB testapp_development['users'].insert([{"provider"=>"facebook", "uid"=>"568675458", "name"=>"Cole Graphite Diamond", "email"=>"cdiamond111@gmail.com", "_id"=>BSON::ObjectId('4e8780d05097d50eb5000001')}])
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (23.8ms)
+MONGODB testapp_development['users'].find({:_id=>BSON::ObjectId('4e8780d05097d50eb5000001')})
+Rendered shared/_navigation.html.erb (1.7ms)
+Completed 200 OK in 154ms (Views: 138.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:06:24 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 8.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:42 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 8.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:08:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4e8780d05097d50eb5000001" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4e8780d05097d50eb5000001"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 17:09:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 17:09:03 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2011-10-01 17:09:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  
+
+Rendered /Users/colediamond/.rvm/gems/ruby-1.9.2-p290@rails31/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
