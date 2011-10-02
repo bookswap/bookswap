@@ -16,6 +16,25 @@ class User
   
   
     
+  def match_have(book)
+      Want.all.each do |want|
+        if want.book.title.eql?(book.title)
+          #execute match
+           self.matches.create!(:user => want.user, :book => want.book)
+        end
+      end  
+     
+  end
+  
+  def match_want(book)
+    Have.all.each do |have|
+      if have.book.title.eql?(book.title)
+        #execute match
+        self.matches.create!(:user => have.user, :book => have.book)
+      end
+    end
+  end
+  
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth['provider']
