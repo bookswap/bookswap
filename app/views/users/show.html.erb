@@ -1,14 +1,24 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
-<p>User: <%= @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
-<p>Have: </p>
-<% @haves.each do |have| %>
-	<%= have %> <br/>
-<% end %>
 
-<p>Want: </p>
+<div id="have_block">
+	<div id="haves">
+	<% @haves.each do |have|%>
+	<p><%= have %></p>
+	<% end %>
+	</div>
+	<%= form_for(@have, :remote => true) do |f| %>
+	<input name="[title]">
+	<%= f.submit "Submit!"%>
+	<% end %>
+</div>
 
-<% @wants.to_a.each do |want| %>
-	<%= want %> <br/>
-<% end %>
+<div id="want_block">
+	<div id="wants">
+	<% @wants.each do |want| %>
+	<p><%= want %></p>
+	<% end %>
+	</div>
+	<%= form_for(@want)%>
+	<input name="[title]">
+	<%= f.submit "Submit!"%>
+	<% end %>
+</div>

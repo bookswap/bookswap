@@ -20,6 +20,9 @@ def show
     @user = User.find(params[:id])
     @wants = @user.wants.all
     @haves = @user.haves.all
+    @want = Want.new
+    @have = Have.new
   end
+
 
 end
