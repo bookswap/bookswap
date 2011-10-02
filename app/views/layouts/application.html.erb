@@ -34,14 +34,23 @@
 						</li>
 					</ul>
 				</nav>
-				<% else %>
-				
+				<% else %>	
+
+
 				<nav id="menu" style="position:relative;">
 					<ul>
 						<li class="nav1" style=""><a style="position:relative; bottom:80px;" href="http://www.facebook.com/<%= current_user.uid %>/"><img src="http://graph.facebook.com/<%= current_user.uid %>/picture?type=large" ></a></li>
-						<li class="nav2" style=""><a href="index.html" class="nav_text"><%= current_user.name %></a></li>
-						<li class="nav3"  style=""><a href="index.html" class="nav_text" style="font-size:16px;"><%= current_user.email %></a></li>
-						<li class="nav4" style=""><a href="index.html" class="nav_text"></a></li>
+						<li class="nav2" style=""><a class="nav_text"><%= current_user.name %></a></li>
+						<li class="nav3"  style=""><a class="nav_text" style="font-size:16px;"><%= current_user.email %></a></li>
+						<li class="nav4" style=""><a class="nav_text"><%= image_tag "cell_phone.png", :style=> "position:relative; bottom:33px;" %>
+							<div phone editable="true">
+							<% unless current_user.number %>
+							<input id="number" placeholder="Enter your number..." name="user[number]" style="z-index:10; position:relative; bottom:30px;">
+							<% else %>
+							<span style="z-index:10; position:relative; bottom:30px;" number><%= current_user.number %></span>
+							<% end %>
+							</div>
+						</a>	</li>
 						<li class="nav5"  style=""><a href="index.html">Logout</a></li>
 					</ul>
 				</nav>
@@ -216,7 +225,27 @@
 			</div>
 <script type="text/javascript"> Cufon.now(); </script>
 <script type="text/javascript">
-	$(window).load(function() {
+	$(document).ready(function() {
+	
+
+		
+		$("div[phone]").click(function()
+		{
+			if($(this).attr("editable") == "true")
+			{
+				$(this).html('<input id="number" placeholder="Enter your number..." name="user[number]" style="z-index:10; position:relative; 	bottom:30px;">');				
+				$(this).attr("editable", "false");
+			}
+
+		}).focusout(function()
+			{
+				$.post("<%= update_number_url %>", {number:$(this).find('input').val(), session_id: "<%= session[:user_id] %>", user_id:"<% if current_user %><%= current_user.id %> <% end %>" });
+				$("div[phone]").html($(this).val());
+				$(this).attr("editable", "true");
+			});
+
+
+
 	$('#slider').nivoSlider({
         effect:'sliceDown', //Specify sets like: 'fold,fade,sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft'    
         slices:20,

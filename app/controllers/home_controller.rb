@@ -12,5 +12,17 @@ class HomeController < ApplicationController
     end
   end
   
+  def update
+    if request.post? and params.has_key?(:number)
+      session_id = params[:user_id]
+      @user = User.find()
+      @user.number = params[:number]
+      @user.save!
+      respond_to do |format|
+        format.html {redirect_to @user}
+        format.js
+      end
+    end
+  end
   
 end
