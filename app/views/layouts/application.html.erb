@@ -6,15 +6,160 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <ul class="hmenu">
-    <%= render 'shared/navigation' %>
-  </ul>
-  <%- flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-  <%- end -%>
+<body id="page1">
+<div class="body1">
+	<div class="body2">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+					<h1><a href="index.html" id="logo"></a></h1>
+					<div class="right">
+						<nav>
 
-<%= yield %>
+						</nav>
+					</div>
+				</div>
+				<% if current_user %>
+				<nav id="menu">
+					<ul>
+						<li class="nav1" id="active"><a href="index.html">Home</a></li>
+						<li class="nav2"><a href="News.html">News</a></li>
+						<li class="nav3"><a href="Services.html">Services</a></li>
+						<li class="nav4"><a href="Products.html">Products</a></li>
+						<li class="nav5"><a href="Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<% end %>
+			</header>
+			</div>
+		</div>
+	</div>
+	<div class="body3">
 
+	</div>
+<!-- / header -->
+<!-- content -->
+	<div class="body5">
+		<div class="body6">
+			<div class="main">
+				<div class="wrapper">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="body7">
+		<div class="main">
+			<%= yield :main %>
+			<section id="content">
+				<div class="wrapper">
+				<article class="col1">
+					<div class="box1"><div class="box1_bot"><div class="box1_top">
+						<div class="pad"><div class="pad1">
+							<h2 class="center">Never.</h2>
+							<p>Find the textbooks you need for next semester</p>
+							<div class="wrapper center">
+								<a href="#" class="button"><span><span>More</span></span></a>
+							</div>
+						</div></div>
+					</div></div></div>
+        		</article>
+				<article class="col1 pad_left1">
+					<div class="box1"><div class="box1_bot"><div class="box1_top">
+						<div class="pad">
+								<div class="pad1">
+							<h2 class="center">Pay.</h2>
+							<p>Exchange your old textbooks to purchase the new textbooks</p>
+							<div class="wrapper center">
+								<a href="#" class="button"><span><span>More</span></span></a>
+							</div>
+						</div></div>
+					</div></div></div>
+        		</article>
+				<article class="col1 pad_left1">
+					<div class="box1"><div class="box1_bot"><div class="box1_top">
+						<div class="pad">
+								<div class="pad1">
+							<h2 class="center">Again.</h2>
+							<p>Choose the best match.</p>
+							<div class="wrapper center">
+								<a href="#" class="button"><span><span>More</span></span></a>
+							</div>
+						</div></div>
+					</div></div></div>
+        		</article>
+				</div>
+			
+			</section>
+		</div>
+	</div>
+			<!-- / content -->
+				<div class="body8">
+				<div class="body9">
+					<div class="main">
+						<footer>
+							<div class="col_1">
+								<h3>Find Us</h3>
+								<ul class="list3">
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Facebook</a></li>
+								</ul>
+							</div>
+							<div class="col_2 pad_left1">
+								<h3>Universities</h3>
+								<div class="wrapper">
+									<ul class="list3 col_1">
+										<li><a href="#">Columbia University</a></li>
+										<li><a href="#">New York University</a></li>
+										<li><a href="#">Barnard College</a></li>
+									</ul>
+									<ul class="list3 col_1 pad_left1">
+										<li><a href="#">CUNY Baruch</a></li>
+										<li><a href="#">Fordham</a></li>
+										<li><a href="#">CUNY City</a></li>															
+									</ul>
+								</div>
+							</div>
+							<div class="col_3">
+								<h3>Contact</h3>
+								<div class="wrapper">
+									<ul class="list3 col_1">
+										<li><a href="#">HackNY.Bookswap@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</footer>
+					</div>
+			<!-- / footer -->
+				</div>
+			</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<script type="text/javascript">
+	$(window).load(function() {
+	$('#slider').nivoSlider({
+        effect:'sliceDown', //Specify sets like: 'fold,fade,sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft'    
+        slices:20,
+        animSpeed:300,
+        pauseTime:9999999999,
+        startSlide:0, //Set starting Slide (0 index)
+        directionNav:true, //Next & Prev
+        directionNavHide:false, //Only show on hover
+        controlNav:false, //1,2,3...
+        controlNavThumbs:false, //Use thumbnails for Control Nav
+        controlNavThumbsFromRel:false, //Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', //Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+        keyboardNav:true, //Use left & right arrows
+        pauseOnHover:true, //Stop animation while hovering
+        manualAdvance:false, //Force manual transitions
+        captionOpacity:1, //Universal caption opacity
+        beforeChange: function(){},
+        afterChange: function(){},
+        slideshowEnd: function(){} //Triggers after all slides have been shown
+    });
+    });
+</script>
 </body>
 </html>
+
