@@ -28466,3 +28466,243 @@ Served asset /wants.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 20:42:37 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 20:58:49 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (49.2ms)
+Compiled application.js  (6ms)  (pid 9975)
+Compiled jquery.js  (2ms)  (pid 9975)
+Compiled jquery_ujs.js  (0ms)  (pid 9975)
+Rendered shared/_navigation.html.erb (1.2ms)
+Completed 200 OK in 374ms (Views: 257.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/wants.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /wants.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /books.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/haves.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /haves.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/haves.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /haves.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /books.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wants.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /wants.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 20:58:50 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 20:59:13 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://0.0.0.0:3000/auth/facebook
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 20:59:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 13.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wants.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /wants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/haves.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /haves.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /books.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/haves.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /haves.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wants.js?body=1" for 127.0.0.1 at 2011-10-01 21:03:22 -0400
+Served asset /wants.js - 304 Not Modified (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 21:03:24 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://0.0.0.0:3000/auth/facebook
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 21:03:24 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 21:05:22 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://0.0.0.0:3000/auth/facebook
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 21:05:22 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 81ms (Views: 13.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /books.css - 200 OK (0ms)
+
+
+Started GET "/assets/haves.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /haves.css - 200 OK (0ms)
+
+
+Started GET "/assets/wants.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /wants.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /books.js - 200 OK (2ms)
+
+
+Started GET "/assets/haves.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /haves.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/wants.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /wants.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
+Served asset /application.js - 200 OK (1ms)
