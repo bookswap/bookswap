@@ -1,0 +1,134 @@
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (41.0ms)
+Compiled application.js  (11ms)  (pid 15502)
+Compiled jquery.js  (38ms)  (pid 15502)
+Compiled jquery_ujs.js  (0ms)  (pid 15502)
+Completed 200 OK in 344ms (Views: 267.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/haves.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /haves.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /reset.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /layout.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /books.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /style.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/wants.css?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /wants.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /books.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/Copse_400.font.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /Copse_400.font.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/haves.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /haves.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/cufon-replace.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /cufon-replace.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/cufon-yui.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /cufon-yui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /home.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/imagepreloader.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /imagepreloader.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.nivo.slider.pack.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /jquery.nivo.slider.pack.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-1.4.2.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /jquery-1.4.2.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/html5.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /html5.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/facebook.png" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /facebook.png - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wants.js?body=1" for 127.0.0.1 at 2011-10-01 23:58:37 -0400
+Served asset /wants.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2011-10-01 23:58:38 -0400
+Served asset /logo.png - 304 Not Modified (3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 23:58:42 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://0.0.0.0:3000/auth/facebook
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 23:58:42 -0400
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+Compiled jquery-ui.min.js  (2ms)  (pid 15691)
+Compiled jquery.min.js  (2ms)  (pid 15691)
