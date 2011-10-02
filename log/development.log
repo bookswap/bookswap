@@ -1285,3 +1285,6 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/logo.png" for 127.0.0.1 at 2011-10-01 23:15:00 -0400
 Served asset /logo.png - 304 Not Modified (3ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
