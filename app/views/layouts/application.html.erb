@@ -35,13 +35,14 @@
 					</ul>
 				</nav>
 				<% else %>
-				<nav id="menu">
+				
+				<nav id="menu" style="position:relative;">
 					<ul>
-						<li class="nav1" id="active"><a href="index.html">Home</a></li>
-						<li class="nav2"><a href="News.html">News</a></li>
-						<li class="nav3"><a href="Services.html">Services</a></li>
-						<li class="nav4"><a href="Products.html">Products</a></li>
-						<li class="nav5"><a href="Contact.html">Contact</a></li>
+						<li class="nav1" style=""><a style="position:relative; bottom:80px;" href="http://www.facebook.com/<%= current_user.uid %>/"><img src="http://graph.facebook.com/<%= current_user.uid %>/picture?type=large" ></a></li>
+						<li class="nav2" style=""><a href="index.html" class="nav_text"><%= current_user.name %></a></li>
+						<li class="nav3"  style=""><a href="index.html" class="nav_text" style="font-size:16px;"><%= current_user.email %></a></li>
+						<li class="nav4" style=""><a href="index.html" class="nav_text"></a></li>
+						<li class="nav5"  style=""><a href="index.html">Logout</a></li>
 					</ul>
 				</nav>
 				<% end %>
@@ -50,15 +51,16 @@
 		</div>
 	</div>
 	<div class="body3">
-
+					
 	</div>
 <!-- / header -->
 <!-- content -->
-	
+<% if !current_user %>	
 	<div class="body7">
 		<div class="main">
 
 			<section id="content">
+				
 				<div class="wrapper">
 				<article class="col1">
 					<div class="box1"><div class="box1_bot"><div class="box1_top">
@@ -95,14 +97,86 @@
 						</div></div>
 					</div></div></div>
         		</article>
-				</div>
-			
+				</div>		
 			</section>
+			
 		</div>
 	</div>
+<% else %>
+
+	<div style="width:100%; text-align:center;"><%= yield %></div>
+
+	<div class="main" >
+
+		<section id="content">
+			
+			<div class="wrapper">
+			<article class="col1">
+				<div class="box1"><div class="box1_bot"><div class="box1_top">
+					<div class="pad"><div class="pad1">
+						<h2 class="center">Have</h2>
+						<p><div id="haves">
+						<% @haves.each do |have|%>
+						<p><%= have %></p>
+						<% end %>
+						</div>
+						<%= form_for(@have, :remote => true) do |f| %>
+						<input name="[title]">
+						<%= f.submit "Submit!"%>
+						<% end %></p>
+						<div class="wrapper center">
+						
+						</div>
+					</div></div>
+				</div></div></div>
+    		</article>
+			<article class="col1 pad_left1">
+				<div class="box1"><div class="box1_bot"><div class="box1_top">
+					<div class="pad">
+							<div class="pad1">
+						<h2 class="center">Want</h2>
+						<p><div id="wants">
+						<% @wants.each do |want| %>
+						<p><%= want %></p>
+						<% end %>
+						</div>
+						<%= form_for(@want, :remote => true) do |f| %>
+						<input name="[title]">
+						<%= f.submit "Submit!", :id => "want" %>
+						<% end %></p>
+						<div class="wrapper center">
+						
+						</div>
+					</div></div>
+				</div></div></div>
+    		</article>
+			<article class="col1 pad_left1">
+				<div class="box1"><div class="box1_bot"><div class="box1_top">
+					<div class="pad">
+							<div class="pad1">
+						<h2 class="center">Matches</h2>
+						<p>3) Choose the best match.</p>
+						<div class="wrapper center">
+						
+						</div>
+					</div></div>
+				</div></div></div>
+    		</article>
+			</div>		
+		</section>
+		
+	</div>
+
+<% end %>
 			<!-- / content -->
+			
+			
 				<div class="body8">
+
+
+
 				<div class="body9">
+					
 					<div class="main">
 						<footer>
 							<div class="col_1">

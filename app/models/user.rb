@@ -5,9 +5,10 @@ class User
   field :uid, :type => String
   field :name, :type => String
   field :email, :type => String
+  field :number, :type => String
   has_many :haves
   has_many :wants
-
+  has_many :matches
   attr_accessible :provider, :uid, :name, :email
 
   def to_s

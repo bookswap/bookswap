@@ -44,11 +44,12 @@ class WantsController < ApplicationController
     @book = Book.create(:title => params[:title], :version => params[:version])
     @want.book = @book
     @want.save!
-    
+    @wants = current_user.wants.all
     respond_to do |format|
       if @want.save
         format.html { redirect_to @want, notice: 'Want was successfully created.' }
-        format.json { render json: @want, status: :created, location: @want }
+       # format.json { render json: @want, status: :created, location: @want }
+       format.js 
       else
         format.html { render action: "new" }
         format.json { render json: @want.errors, status: :unprocessable_entity }

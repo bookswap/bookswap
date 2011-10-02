@@ -45,11 +45,12 @@ class HavesController < ApplicationController
       @book = Book.create!(:title => params[:title], :version => params[:version])
       @have.book = @book
       @have.save!
-      
+    @haves = current_user.haves.all
     respond_to do |format|
       if @have.save
         format.html { redirect_to @have, notice: 'Have was successfully created.' }
-        format.json { render json: @have, status: :created, location: @have }
+       # format.json { render json: @have, status: :created, location: @have }
+        format.js
       else
         format.html { render action: "new" }
         format.json { render json: @have.errors, status: :unprocessable_entity }
@@ -61,7 +62,6 @@ class HavesController < ApplicationController
   # PUT /haves/1.json
   def update
     @have = Have.find(params[:id])
-
     respond_to do |format|
       if @have.update_attributes(params[:hafe])
         format.html { redirect_to @have, notice: 'Have was successfully updated.' }

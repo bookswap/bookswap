@@ -17,7 +17,7 @@
 	<p><%= want %></p>
 	<% end %>
 	</div>
-	<%= form_for(@want)%>
+	<%= form_for(@want) do |f| %>
 	<input name="[title]">
 	<%= f.submit "Submit!"%>
 	<% end %>

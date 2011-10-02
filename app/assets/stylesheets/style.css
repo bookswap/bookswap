@@ -29,6 +29,7 @@ h3 {font-size:20px;color:#fff;line-height:1.2em;padding:24px 0 40px 0}
 p {padding-bottom:20px}
 /* header */
 header{}
+
 #logo {display:block;background:url(/assets/logo.png) no-repeat;width:243px;height:60px;text-indent:-9999px}
 header .right{padding-right:59px;width:500px}
 #top_nav {padding:25px 0 0px 0;float:right;width:500px}
@@ -42,17 +43,20 @@ header .right{padding-right:59px;width:500px}
 #menu ul {background:url(/assets/menu_border.gif) top right no-repeat;width:100%;overflow:hidden}
 #menu li {float:left;padding-left:2px}
 #menu li a {display:block;height:66px;width:198px;font-size:24px;padding-top:90px;text-align:center;text-decoration:none;text-transform:uppercase}
+#menu li a.nav_text {
+	position:relative; text-align:center; text-transform:none; bottom: 43px; line-height: 30px;
+}
 #menu li a:hover, #menu #menu_active a{}
-.nav1 {background:url(/assets/menu1.gif) center 35px no-repeat}
-.nav2 {background:url(/assets/menu2.gif) center 35px no-repeat}
-.nav3 {background:url(/assets/menu3.gif) center 35px no-repeat}
-.nav4 {background:url(/assets/menu4.gif) center 35px no-repeat}
-.nav5 {background:url(/assets/menu5.gif) center 35px no-repeat}
-.nav1:hover, .nav1#active {background:url(/assets/logo.png) center 31px no-repeat #001527;}
-.nav2:hover, .nav2#active {background:url(/assets/menu2_active.gif) center 31px no-repeat #001527}
-.nav3:hover, .nav3#active {background:url(/assets/menu3_active.gif) center 31px no-repeat #001527}
-.nav4:hover, .nav4#active {background:url(/assets/menu4_active.gif) center 31px no-repeat #001527}
-.nav5:hover, .nav5#active {background:url(/assets/menu5_active.gif) center 31px no-repeat #001527}
+.nav1 {background:url() }
+.nav2 {background:url() center 35px no-repeat}
+.nav3 {background:url() center 35px no-repeat}
+.nav4 {background:url() center 35px no-repeat}
+.nav5 {background:url(/assets/menu1.gif) center 35px no-repeat}
+.nav1:hover, .nav1#active {}
+#.nav2:hover, .nav2#active {background:url() center 31px no-repeat #001527}
+#.nav3:hover, .nav3#active {background:url() center 31px no-repeat #001527}
+#.nav4:hover, .nav4#active {background:url() center 31px no-repeat #001527}
+#.nav5:hover, .nav5#active {background:url() center 31px no-repeat #001527}
 .slogan {background:url(/assets/text.gif) center 108px no-repeat;height:141px;overflow:hidden;position:relative;padding-top:108px}
 .slogan a {margin-top:64px}
 /* The Nivo Slider styles */

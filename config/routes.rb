@@ -1,4 +1,6 @@
 Rails3MongoidOmniauth::Application.routes.draw do
+  resources :matches
+
   resources :books
 
   resources :wants
