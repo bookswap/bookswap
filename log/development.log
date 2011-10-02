@@ -28849,3 +28849,21 @@ MONGODB admin['$cmd'].find({:ismaster=>1})
 MONGODB admin['$cmd'].find({:ismaster=>1})
 Compiled jquery-ui.min.js  (2ms)  (pid 10737)
 Compiled jquery.min.js  (2ms)  (pid 10737)
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 22:26:28 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://0.0.0.0:3000/auth/facebook
+Completed 302 Found in 0ms
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 22:26:28 -0400
+
+
+Started GET "/signin" for 127.0.0.1 at 2011-10-01 22:26:28 -0400
+  Processing by SessionsController#new as HTML
+Redirected to http://0.0.0.0:3000/auth/facebook
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2011-10-01 22:26:28 -0400
