@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Book:</b>
+  <%= @have.book.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_have_path(@have) %> |
+<%= link_to 'Back', haves_path %>

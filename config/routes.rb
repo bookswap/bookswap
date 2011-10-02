@@ -1,5 +1,11 @@
 Rails3MongoidOmniauth::Application.routes.draw do
-  devise_for :users
+  resources :books
+
+  resources :wants
+
+  resources :haves
+
+
 
   #get \"users\/show\"
 

@@ -1,11 +1,21 @@
 class User
   include Mongoid::Document
+  include Mongoid::Timestamps 
   field :provider, :type => String
   field :uid, :type => String
   field :name, :type => String
   field :email, :type => String
+  has_many :haves
+  has_many :wants
+
   attr_accessible :provider, :uid, :name, :email
 
+  def to_s
+    self.name
+  end
+  
+  
+    
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth['provider']

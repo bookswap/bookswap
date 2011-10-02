@@ -1,0 +1,24 @@
+<%= form_for(@have) do |f| %>
+  <% if @have.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@have.errors.count, "error") %> prohibited this hafe from being saved:</h2>
+
+      <ul>
+      <% @have.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="field">
+	Title:<br/><input name="[title]">
+  </div>
+
+  <div class="field">
+    Version:<br/><input name="[version]">
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

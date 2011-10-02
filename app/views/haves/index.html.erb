@@ -1,0 +1,31 @@
+<h1>Listing haves</h1>
+
+<table>
+  <tr>
+    <th>Book</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @haves.each do |have| %>
+
+  <tr>
+	
+    <td><%= have.book.title %></td>
+    <td><%= have.book.version %></td>
+
+    <td><%= link_to 'Show', have %></td>
+    <td><%= link_to 'Edit', edit_have_path(have) %></td>
+    <td><%= link_to 'Destroy', have, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+
+
+
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Have', new_have_path %>

@@ -2,3 +2,13 @@
 <p>Find me in app/views/users/show.html.erb</p>
 <p>User: <%= @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>
+<p>Have: </p>
+<% @haves.each do |have| %>
+	<%= have %> <br/>
+<% end %>
+
+<p>Want: </p>
+
+<% @wants.to_a.each do |want| %>
+	<%= want %> <br/>
+<% end %>
