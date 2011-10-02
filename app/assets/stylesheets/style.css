@@ -48,7 +48,7 @@ header .right{padding-right:59px;width:500px}
 .nav3 {background:url(/assets/menu3.gif) center 35px no-repeat}
 .nav4 {background:url(/assets/menu4.gif) center 35px no-repeat}
 .nav5 {background:url(/assets/menu5.gif) center 35px no-repeat}
-.nav1:hover, .nav1#active {background:url(/assets/menu1_active.gif) center 31px no-repeat #001527}
+.nav1:hover, .nav1#active {background:url(/assets/logo.png) center 31px no-repeat #001527;}
 .nav2:hover, .nav2#active {background:url(/assets/menu2_active.gif) center 31px no-repeat #001527}
 .nav3:hover, .nav3#active {background:url(/assets/menu3_active.gif) center 31px no-repeat #001527}
 .nav4:hover, .nav4#active {background:url(/assets/menu4_active.gif) center 31px no-repeat #001527}

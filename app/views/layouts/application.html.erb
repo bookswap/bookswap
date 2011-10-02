@@ -13,14 +13,20 @@
 <!-- header -->
 			<header>
 				<div class="wrapper">
-					<h1><a href="index.html" id="logo"></a></h1>
+					<h1><a href="index.html" id="logo" style="position:relative;left:330px;"></a></h1>
 					<div class="right">
 						<nav>
-
+							
 						</nav>
 					</div>
 				</div>
-				<% if current_user %>
+				<% if !current_user %>
+				<nav id="menu">
+					<ul>
+						<li style="position:relative;left:850px;"><%= image_tag "facebook.png" %></li>
+					</ul>
+				</nav>
+				<% else %>
 				<nav id="menu">
 					<ul>
 						<li class="nav1" id="active"><a href="index.html">Home</a></li>
@@ -40,15 +46,7 @@
 	</div>
 <!-- / header -->
 <!-- content -->
-	<div class="body5">
-		<div class="body6">
-			<div class="main">
-				<div class="wrapper">
-				
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class="body7">
 		<div class="main">
 			<%= yield :main %>
@@ -58,9 +56,9 @@
 					<div class="box1"><div class="box1_bot"><div class="box1_top">
 						<div class="pad"><div class="pad1">
 							<h2 class="center">Never.</h2>
-							<p>Find the textbooks you need for next semester</p>
+							<p>1) Find the textbooks you need for next semester</p>
 							<div class="wrapper center">
-								<a href="#" class="button"><span><span>More</span></span></a>
+							
 							</div>
 						</div></div>
 					</div></div></div>
@@ -70,9 +68,9 @@
 						<div class="pad">
 								<div class="pad1">
 							<h2 class="center">Pay.</h2>
-							<p>Exchange your old textbooks to purchase the new textbooks</p>
+							<p>2) Exchange your old textbooks to purchase the new textbooks</p>
 							<div class="wrapper center">
-								<a href="#" class="button"><span><span>More</span></span></a>
+							
 							</div>
 						</div></div>
 					</div></div></div>
@@ -82,9 +80,9 @@
 						<div class="pad">
 								<div class="pad1">
 							<h2 class="center">Again.</h2>
-							<p>Choose the best match.</p>
+							<p>3) Choose the best match.</p>
 							<div class="wrapper center">
-								<a href="#" class="button"><span><span>More</span></span></a>
+							
 							</div>
 						</div></div>
 					</div></div></div>
