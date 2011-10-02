@@ -28706,3 +28706,146 @@ Served asset /wants.js - 200 OK (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 21:18:39 -0400
 Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 94ms (Views: 16.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wants.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /wants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/haves.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /haves.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/haves.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /haves.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wants.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /wants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:23 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 21:40:24 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+  Processing by HomeController#index as HTML
+MONGODB testapp_development['system.namespaces'].find({})
+MONGODB testapp_development['users'].find({})
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 13.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wants.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /wants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/haves.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /haves.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /users.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/haves.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /haves.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wants.js?body=1" for 127.0.0.1 at 2011-10-01 21:44:58 -0400
+Served asset /wants.js - 304 Not Modified (0ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+Compiled jquery-ui.min.js  (2ms)  (pid 10737)
+Compiled jquery.min.js  (2ms)  (pid 10737)
